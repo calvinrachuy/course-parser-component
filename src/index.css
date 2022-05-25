@@ -1,0 +1,83 @@
+:root {
+  --border-radius: 4px;
+  --color-accent: darkblue;
+  --color-error: rgb(195, 93, 50);
+  --gray-dark: rgb(90, 90, 90);
+  --gray-light: lightgray;
+  --gray: rgb(132, 136, 138);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-accent);
+  color: darkblue;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1em 2.25em;
+}
+
+button:disabled {
+  background-color: var(--gray-light);
+  border: 0;
+  color: var(--gray);
+  cursor: default;
+}
+
+form {
+  margin: 2em 0;
+}
+
+input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--gray-light);
+  max-width: 80vw;
+  padding: 1em;
+  width: 100%;
+}
+
+label {
+  display: flex;
+}
+
+.page {
+  margin: 2em auto;
+  max-width: 720px;
+  width: 80vw;
+}
+
+.error {
+  color: var(--color-error)
+}
+
+input.error {
+  color: black;
+  border-color: var(--color-error);
+}
+
+.row {
+  display: flex;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+.row > *:not(:last-child) {
+  margin-right: 1em;
+}
