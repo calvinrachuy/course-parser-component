@@ -1,3 +1,4 @@
+import React from 'react'
 import { default as parse } from './parseCourseString'
 import { useState } from 'react'
 import CourseCard from './CourseCard'
@@ -54,7 +55,7 @@ function App() {
       </form>
       {course && <CourseCard {...course} />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -10,24 +10,24 @@ function parseDepartment(string) {
 
 function parseSemester(string) {
   switch (string) {
-    case 'Fall':
-    case 'fall':
-    case 'F':
-      return 'Fall'
-    case 'Winter':
-    case 'winter':
-    case 'W':
-      return 'Winter'
-    case 'Spring':
-    case 'spring':
-    case 'S':
-      return 'Spring'
-    case 'Summer':
-    case 'summer':
-    case 'Su':
-      return 'Summer'
-    default:
-      throw new Error(`invalid semester: ${string}`)
+  case 'Fall':
+  case 'fall':
+  case 'F':
+    return 'Fall'
+  case 'Winter':
+  case 'winter':
+  case 'W':
+    return 'Winter'
+  case 'Spring':
+  case 'spring':
+  case 'S':
+    return 'Spring'
+  case 'Summer':
+  case 'summer':
+  case 'Su':
+    return 'Summer'
+  default:
+    throw new Error(`invalid semester: ${string}`)
   }
 }
 

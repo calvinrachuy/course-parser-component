@@ -1,6 +1,8 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import './CourseCard.css'
 
-export default function CourseCard({ department, courseNumber, semester, year }) {
+function CourseCard({ department, courseNumber, semester, year }) {
   return (
     <section className="course-card">
       <header tabIndex="0">{department} {courseNumber}</header>
@@ -25,3 +27,12 @@ export default function CourseCard({ department, courseNumber, semester, year })
     </section>
   )
 }
+
+CourseCard.propTypes = {
+  department: PropTypes.string.isRequired,
+  courseNumber: PropTypes.string.isRequired,
+  semester: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+}
+
+export default CourseCard
